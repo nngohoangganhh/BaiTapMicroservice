@@ -1,0 +1,8 @@
+target/
+.idea/
+*.iml
+.env
+*.log
+
+# Maven wrapper vẫn nên giữ lại
+!.mvn/wrapper/maven-wrapper.jar
