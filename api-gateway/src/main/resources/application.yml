@@ -17,14 +17,14 @@ spring:
           uri: lb://IAM-SERVICE
           predicates:
             - Path=/api/iam/**
-#          filters:
-#            - StripPrefix=2
+          filters:
+            - StripPrefix=2
         - id: storage-service
           uri: lb://STORAGE-SERVICE
           predicates:
             - Path=/api/storage/**
-#          filters:
-#           - StripPrefix=2
+          filters:
+           - StripPrefix=2
 
 eureka:
   client:

@@ -1,10 +1,10 @@
-package com.demo.iamservice;
+package com.demo.commonlib;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class IamServiceApplicationTests {
+class CommonLibApplicationTests {
 
     @Test
     void contextLoads() {

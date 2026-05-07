@@ -28,10 +28,10 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/iam/auth/login").permitAll()
                         .requestMatchers("/api/iam/hello").permitAll()
-                        .requestMatchers("/api/iam/me").authenticated()
+                        .requestMatchers("/test/iam/me").authenticated()
                         .anyRequest().authenticated()
                 )
-                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
+                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }
